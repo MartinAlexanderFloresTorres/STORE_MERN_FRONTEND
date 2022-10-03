@@ -8,20 +8,22 @@ import 'react-toastify/dist/ReactToastify.css';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-	<AuthProvider>
-		<ColeccionesProvider>
-			<App />
-			<ToastContainer
-				position='top-right'
-				autoClose={2000}
-				hideProgressBar={false}
-				newestOnTop={false}
-				closeOnClick
-				rtl={false}
-				pauseOnFocusLoss
-				draggable
-				pauseOnHover={false}
-			/>
-		</ColeccionesProvider>
-	</AuthProvider>
+	<React.StrictMode>
+		<AuthProvider>
+			<ColeccionesProvider>
+				<App />
+				<ToastContainer
+					position='top-right'
+					autoClose={2000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover={false}
+				/>
+			</ColeccionesProvider>
+		</AuthProvider>
+	</React.StrictMode>
 );
