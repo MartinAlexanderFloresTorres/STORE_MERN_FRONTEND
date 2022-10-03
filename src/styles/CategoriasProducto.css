@@ -1,0 +1,25 @@
+.categorias {
+	padding: 40px 30px;
+}
+.categorias h2 {
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.categorias__grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	align-items: center;
+	column-gap: 20px;
+	row-gap: 30px;
+}
+@media (max-width: 1153px) {
+	.categorias__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 480px) {
+	.categorias__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

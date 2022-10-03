@@ -1,0 +1,119 @@
+.desplegable {
+	width: 100%;
+/* 	background: var(--white); */
+	margin-bottom: 12px;
+}
+.desplegable__boton {
+	width: 100%;
+	padding: 10px;
+	padding-bottom: 18px;
+	display: grid;
+	grid-template-columns: 1fr 30px;
+	align-items: center;
+	border-bottom: var(--border);
+}
+.desplegable__titulo {
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: left;
+	font-family: var(--font-secundario);
+}
+.despegable__icono{
+	width: 16px;
+	height: 16px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: var(--transition-3);
+}
+.despegable__icono::before{
+	content:  " ";
+	width: 16px;
+	height: 2px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	background: var(--black-1);
+	transition: var(--transition-3);
+}
+.despegable__icono::after{
+	content:  " ";
+	width: 16px;
+	height: 2px;
+	display: block;
+	background: var(--black-1);
+	transform: translate(-50%, 50%) rotate(90deg);
+	transition: var(--transition-3);
+}
+.desplegable.active .despegable__icono::before{
+	transform: rotate(90deg);
+	opacity: 0;
+}
+.desplegable.active .despegable__icono::after{
+	opacity: 1;
+	transform: translate(-50%, 50%) rotate(180deg);
+}
+.desplegable button svg {
+	width: 20px;
+	transition: var(--transition-3);
+}
+.desplegable.active button svg {
+	transform: rotate(-180deg);
+}
+.desplegable__contenido {
+	width: 100%;
+	max-height: 0;
+	opacity: 0;
+	transform-origin: top;
+	overflow: hidden;
+	transition: var(--transition-3);
+}
+.desplegable.active .desplegable__contenido {
+	max-height: 3500px;
+	opacity: 1;
+	overflow: auto;
+}
+.desplegable__contenido > div {
+	margin-top: 5px;
+	padding: 10px;
+	border-bottom: var(--border);
+}
+.desplegable__contenido p {
+	font-size: 15px;
+	color: var(--gris-2);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+.desplegable__contenido ul {
+	list-style: disc;
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+.desplegable__contenido ul li {
+	font-size: 14px;
+	color: var(--gris-2);
+	margin-bottom: 5px;
+}
+.desplegable__contenido ul h2,
+.desplegable__contenido ul h3,
+.desplegable__contenido ul h4,
+.desplegable__contenido ul h5,
+.desplegable__contenido ul h6,
+.desplegable__contenido ul p {
+	transform: translateX(-14px);
+}
+.desplegable__contenido h2,
+.desplegable__contenido h3,
+.desplegable__contenido h4,
+.desplegable__contenido h5,
+.desplegable__contenido h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	text-transform: capitalize;
+}

@@ -1,0 +1,154 @@
+.menuCuenta {
+	position: relative;
+	z-index: 10;
+}
+.menuCuenta__opciones {
+	min-width: 340px;
+	max-height: calc(100vh - 70px);
+	position: absolute;
+	top: 54px;
+	right: 5px;
+	background: var(--white);
+	outline: var(--border);
+	transition: var(--transition-3);
+	transform-origin: top;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	z-index: 6;
+	padding: 5px;
+	padding-top: 0;
+	transform: scale(0);
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+}
+.menuCuenta.active .menuCuenta__opciones {
+	transform: scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+.menuCuenta__usuario {
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 25px;
+	position: sticky;
+	top: 0;
+	background: var(--white);
+}
+.menuCuenta__usuario > div {
+	padding: 2px;
+	user-select: none;
+	border: 1px solid rgb(112, 181, 255);
+	box-shadow: 0 0 10px 0 rgba(25, 136, 255, 0.2);
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-bottom: 5px;
+}
+.menuCuenta__usuario img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.menuCuenta__usuario .menuCuenta__texto {
+	padding: 0;
+}
+.menuCuenta__usuario .menuCuenta__texto span {
+	font-weight: bold;
+	color: var(--black-4);
+}
+.menuCuenta__usuario a {
+	color: var(--sky);
+	font-size: 12px;
+}
+.menuCuenta__usuario a:hover {
+	text-decoration: underline;
+}
+.menuCuenta__texto {
+	font-size: 14px;
+	text-align: center;
+	font-weight: 500;
+	padding: 10px;
+}
+.menuCuenta__opciones svg{
+	min-width: 20px;
+	min-height: 20px;
+	width: 20px;
+	height: 20px;
+}
+.menuCuenta__link {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+	padding: 12px 25px;
+	font-weight: 500;
+	border-radius: 5px;
+	transition: var(--transition-3);
+	margin-bottom: 6px;
+}
+.menuCuenta__link:hover {
+	background: var(--gris-11);
+}
+.menuCuenta__crear {
+	text-align: center;
+	padding: 10px 20px;
+}
+.menuCuenta__crear p {
+	font-size: 12px;
+	pointer-events: none;
+}
+.menuCuenta__crear a {
+	font-size: 14px;
+	font-weight: bold;
+}
+.menuCuenta__crear a:hover {
+	text-decoration: underline;
+}
+.menuCuenta__login {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+	background: var(--black-1);
+	color: var(--white);
+	text-align: center;
+	padding: 14px 25px;
+	text-transform: uppercase;
+	font-size: 14px;
+	transition: var(--transition-3);
+	border-radius: 5px;
+}
+.menuCuenta__login:hover {
+	background: var(--black-4);
+}
+@media (max-width: 1100px) {
+	.menuCuenta__opciones {
+		top: 49px;
+		right: 0;
+	}
+}
+@media (max-width: 450px) {
+	.menuCuenta__opciones {
+		max-width: 100%;
+		width: 100%;
+		position: fixed;
+		right: 0;
+		top: 59px;
+		min-height: calc(100% - 59px);
+		border-radius: 0;
+	}
+	.menuCuenta__login{
+		background: transparent;
+		border: var(--border);
+		color: currentColor;
+	}
+	.menuCuenta__login:hover{
+		background: var(--gris-11);
+	}
+}

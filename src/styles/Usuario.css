@@ -1,0 +1,99 @@
+.usuario {
+	flex: auto;
+	min-width: 300px;
+	max-width: 500px;
+	height: 100%;
+	display: block;
+	position: relative;
+	padding: 10px;
+	border: var(--border);
+}
+.usuario .usuario__perfil {
+	text-align: center;
+}
+.usuario .usuario__perfil h2 {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.usuario .usuario__perfil p {
+	font-size: 14px;
+}
+.usuario .usuario__perfil img {
+	min-width: 100px;
+	min-height: 100px;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	text-align: center;
+	border-radius: 50%;
+	transition: var(--transition-3);
+	margin: 20px auto;
+	user-select: none;
+}
+.usuario__bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+	column-gap: 20px;
+}
+.usuario__bottom select {
+	flex: auto;
+	width: fit-content;
+	text-align: center;
+}
+.usuario__bottom .usuario__eliminar {
+	width: fit-content;
+	flex: auto;
+	padding: 10px 30px;
+	border: var(--border);
+	background: var(--white);
+	font-weight: 600;
+	transition: var(--transition-3);
+	text-align: center;
+}
+.usuario__bottom .usuario__eliminar:hover {
+	background: var(--black-1);
+	color: var(--white);
+}
+.usuario .usuario__informacion {
+	padding: 18px;
+}
+.usuario .usuario__informacion a {
+	margin-bottom: 10px;
+	display: block;
+}
+.usuario .usuario__informacion a:hover {
+	text-decoration: underline;
+}
+.usuario .usuario__informacion p {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.usuario .usuario__informacion p span {
+	color: var(--black-3);
+	font-weight: 600;
+}
+.usuario .producto__empresa {
+	position: sticky;
+}
+.usuario .producto__empresa button {
+	position: static;
+}
+.usuario .producto__empresa button img {
+	width: 40px;
+	height: 40px;
+	min-width: 40px;
+	min-height: 40px;
+	object-fit: contain;
+}
+.usuario .producto__empresa .producto__empresaContenido {
+	max-width: 100%;
+	width: 100%;
+	top: -374px;
+	right: -11px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}

@@ -1,0 +1,25 @@
+.unirte {
+	padding: 30px;
+}
+.unirte h3 {
+	font-size: 30px;
+	color: var(--gris-1);
+	margin-bottom: 20px;
+	font-weight: 900;
+}
+.unirte ul {
+	margin-bottom: 20px;
+}
+.unirte li {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	justify-content: flex-start;
+	font-weight: 500;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.unirte li svg {
+	width: 20px;
+	color: var(--gris-1);
+}

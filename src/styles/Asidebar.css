@@ -1,0 +1,118 @@
+.asidebar {
+	display: grid;
+	grid-template-columns: 400px 1fr;
+	align-items: flex-start;
+	padding: 20px;
+}
+.asidebar__left {
+	position: sticky;
+	top: 89px;
+	padding: 20px;
+	background: var(--gris-14);
+	border-radius: 5px;
+	border: var(--border);
+}
+.asidebar__left a.active {
+	color: var(--sky);
+}
+.asidebar__left a,
+.asidebar__left button {
+	display: flex;
+	align-items: center;
+	row-gap: 10px;
+	column-gap: 10px;
+}
+.asidebar__left a svg,
+.asidebar__left button svg {
+	width: 20px;
+	height: 20px;
+}
+.asidebar__links a {
+	font-weight: 600;
+	font-size: 15px;
+	margin-bottom: 15px;
+	transition: var(--transition-3);
+}
+.asidebar__links a:hover{
+	color: var(--gris-2);
+}
+.asidebar__opciones {
+	margin-bottom: 40px;
+}
+.asidebar__opciones a,
+.asidebar__opciones button {
+	font-size: 13px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.asidebar__opciones button {
+	color: var(--gris-4);
+	font-size: 14px;
+}
+.asidebar .unirse {
+	padding: 20px;
+	border-radius: 5px;
+	background: var(--white);
+}
+.asidebar__unirseMovil {
+	display: none;
+}
+@media (max-width: 1080px) {
+	.asidebar {
+		display: block;
+	}
+	.asidebar__left {
+		position: static;
+		background: transparent;
+		border-radius: 0;
+		border: none;
+		border-bottom: var(--border);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		row-gap: 20px;
+		column-gap: 20px;
+		padding: 0 10px 22px 10px;
+	}
+	.asidebar__links,
+	.asidebar__opciones,
+	.asidebar__links a:last-child {
+		margin-bottom: 0;
+	}
+	.asidebar__opciones {
+		padding: 20px;
+		border: var(--border);
+		border-radius: 5px;
+	}
+	.asidebar__opciones a{
+		justify-content: center;
+	}
+	.asidebar__opciones button {
+		width: 100%;
+		background: var(--black-1);
+		color: var(--white);
+		padding: 12px 20px;
+		border-radius: 5px;
+		text-align: center;
+		justify-content: center;
+		margin-bottom: 0;
+	}
+	.asidebar__unirse {
+		display: none;
+	}
+	.asidebar__unirseMovil {
+		display: block;
+	}
+	.asidebar .unirse {
+		padding: 10px;
+		margin-top: 30px;
+	}
+}
+@media (max-width: 450px) {
+	.asidebar__left {
+		display: block;
+	}
+	.asidebar__links {
+		margin-bottom: 30px;
+	}
+}

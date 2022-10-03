@@ -1,0 +1,164 @@
+.cuenta{
+	padding-bottom: 10px;
+	padding-left: 40px;
+}
+.cuenta__item {
+	margin-bottom: 20px;
+}
+.cuenta__imagen{
+	min-height: 50px;
+	max-height: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.cuenta__item h5 {
+	font-size: 14px;
+	color: var(--gris-1);
+	font-weight: 600;
+	margin-bottom: 3px;
+}
+.cuenta__item p {
+	font-size: 14px;
+	color: var(--gris-2);
+	margin-top: 0;
+}
+.cuenta__botones {
+	display: flex;
+	align-items: center;
+	row-gap: 20px;
+	column-gap: 20px;
+}
+.cuenta__eliminar {
+	width: fit-content;
+	min-height: 50px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	padding: 0.8rem 1.5rem;
+	background: var(--error);
+	color: #fff;
+	transition: var(--transition-3);
+	text-align: center;
+}
+.cuenta__contraseña{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.cuenta__contraseña h5{
+  font-size: 25px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: var(--font-primario);
+}
+.cuenta__contraseña button{
+  padding: 12px 22px;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: var(--transition-3);
+	border: var(--border);
+  color: var(--gris-1);
+  background: var(--white);
+}
+.cuenta__contraseña button:hover{
+  opacity: 0.7;
+}
+.cuenta__botonesForm{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	column-gap: 10px;
+}
+.cuenta__confirmacionEliminacion__top{
+	margin-bottom: 30px;
+}
+.cuenta__confirmacionEliminacion__top h2{
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+.cuenta__confirmacionEliminacion__top p{
+	font-size: 16px;
+}
+.cuenta__confirmacionEliminacion__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: flex-start;
+	row-gap: 40px;
+	column-gap: 20px;
+}
+.cuenta__confirmacionEliminacion__grid h2{
+	margin-bottom: 16px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.cuenta__confirmacionEliminacion__grid p{
+	margin-top: 30px;
+	font-size: 14px;
+}
+.cuenta__confirmacionEliminacion__grid ul{
+	list-style: disc;
+	margin-left: 18px;
+}
+.cuenta__confirmacionEliminacion__grid li{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.cuenta__confirmacionEliminacion__aceptar{
+	display: flex;
+	align-items: center;
+	row-gap: 10px;
+	column-gap: 10px;
+	padding: 20px 0;
+	font-size: 14px;
+	color: var(--gris-2);
+	margin-bottom: 10px;
+	user-select: none;
+}
+.cuenta__botonesForm{
+	padding-top: 20px;
+}
+.cuenta__confirmacionEliminacion__aceptar input{
+	border: var(--border);
+}
+@media (max-width: 1080px) {
+	.cuenta{
+		padding: 0;
+	}
+}
+@media (max-width: 700px) {
+	.cuenta__confirmacionEliminacion__grid{
+		grid-template-columns: 1fr;
+	}
+	.cuenta__confirmacionEliminacion__grid li{
+		margin-bottom: 3px;
+	}
+}
+@media (max-width: 500px) {
+	.cuenta__confirmacionEliminacion__aceptar{
+		margin-bottom: 10px;
+	}
+	.cuenta__botonesForm{
+		padding-top: 10px;
+	}
+}
+@media (max-width: 400px) {
+	.cuenta__botonesForm{
+		display: block;
+	}
+	.cuenta__botonesForm button,
+	.cuenta__botonesForm a{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.cuenta__botonesForm button:last-child,
+	.cuenta__botonesForm a:last-child{
+		margin-bottom: 0;
+	}
+}

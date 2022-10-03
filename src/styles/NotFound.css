@@ -1,0 +1,57 @@
+.notFound {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	background-blend-mode: multiply;
+	background-image: url('/img/404_desktop.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.notFound__contenido {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.notFound__item {
+	max-width: 900px;
+	color: #fff;
+	text-align: center;
+	padding: 50px 20px;
+}
+.notFound__item h2 {
+	font-size: 50px;
+	margin-bottom: 25px;
+}
+.notFound__item h1 {
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+.notFound__item p {
+	color: #fff;
+	margin-bottom: 25px;
+}
+.notFound__item a {
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	border: 1px solid #fff;
+	padding: 16px 60px;
+	color: #fff;
+	transition: var(--transition-3);
+}
+.notFound__item a:hover {
+	opacity: 0.7;
+}
+@media (max-width: 650px) {
+	.notFound__item h2 {
+		font-size: 40px;
+	}
+	.notFound__item h1 {
+		font-size: 30px;
+	}
+}

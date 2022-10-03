@@ -1,0 +1,524 @@
+.producto {
+	padding: 40px 30px;
+}
+.producto img {
+	padding: 12px;
+	user-select: none;
+}
+.producto__grid {
+	display: grid;
+	grid-template-columns: 800px 1fr;
+	grid-auto-rows: auto;
+	row-gap: 40px;
+	column-gap: 40px;
+}
+.producto__headding {
+	display: none;
+}
+.producto__imagenes {
+	height: 100%;
+}
+.producto__swiper {
+	border: var(--border);
+	text-align: center;
+	user-select: none;
+	position: relative;
+}
+.producto__swiper .swiper-zoom-container {
+	height: 600px;
+}
+.producto__swiper .swiper-zoom-container img {
+	height: 100%;
+}
+.producto .producto__agrandarbtn {
+	color: var(--black-1);
+	background: var(--white);
+	border: var(--border);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.zoom img {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	cursor: zoom-in;
+}
+.zoom .swiper-slide-zoomed img {
+	cursor: zoom-out;
+}
+.producto__selecionar {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.producto__selecionar button {
+	border: var(--border);
+	width: 96px;
+	height: 96px;
+	padding: 5px;
+	text-align: center;
+	transition: var(--transition-3);
+}
+.producto__selecionar button img {
+	pointer-events: none;
+}
+.producto__selecionar button.active {
+	padding: 8px;
+	border-color: var(--black-1);
+}
+.producto__selecionar button:hover {
+	border-color: var(--black-1);
+}
+.producto__selecionar button img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.producto__right {
+	position: relative;
+	grid-column: 2/ -1;
+	grid-row: auto;
+	padding-bottom: 10px;
+	padding-right: 5px;
+}
+.producto__navegacion {
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--gris-2);
+	padding-bottom: 10px;
+	transition: var(--transition-3);
+}
+.producto__navegacion a:hover {
+	color: var(--black-1);
+}
+.producto__navegacion span {
+	font-size: 10px;
+	color: var(--gris-5);
+}
+.producto__nombre {
+	font-size: 30px;
+	margin-bottom: 10px;
+	padding-right: 86px;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.producto__descripcion {
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.producto__agotado {
+	width: fit-content;
+	background: var(--black-1);
+	color: var(--white);
+	font-weight: bold;
+	padding: 6px 18px;
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.producto__oferta {
+	width: fit-content;
+	background: var(--red-1);
+	color: #fff;
+	font-weight: bold;
+	padding: 6px 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 13px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.producto__precios h2 {
+	font-family: var(--font-headding);
+	margin-bottom: 20px;
+}
+.producto__precios p {
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--black-1);
+	margin-bottom: 10px;
+}
+.producto__precios .precio__tachado {
+	text-decoration: line-through;
+	font-size: 16px;
+}
+.producto__ahorro {
+	color: var(--red-1);
+	font-size: 13px;
+	font-weight: 500;
+}
+.producto__disponibles {
+	width: 100%;
+	margin-top: 10px;
+}
+.producto__disponibles > div {
+	width: 100%;
+	background: var(--gris-11);
+	margin-bottom: 10px;
+	border-radius: 8px;
+}
+.producto__disponibles > div > div {
+	width: fit-content;
+	height: 8px;
+	border-radius: 8px;
+	background: var(--red-1);
+}
+.producto__disponibles p {
+	font-size: 14px;
+}
+.producto__disponibles p span {
+	color: var(--red-1);
+	font-weight: 600;
+	font-size: 16px;
+}
+.producto__botones {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.producto__botones button {
+	font-family: var(--font-primario);
+	width: 100%;
+	padding: 15px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 18px;
+	text-align: center;
+	border: var(--border);
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	transition: var(--transition-3);
+}
+.producto__botones button:active{
+	transform: scale(0.9);
+}
+.producto__botones button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+.producto__botones button.pagarbtn {
+	background: var(--black-1);
+	color: var(--white);
+}
+.producto__botones button.pagarbtn:disabled {
+	opacity: 1;
+	cursor: not-allowed;
+	color: #b6b6b6;
+	background-color: #f6f6f6;
+	pointer-events: all
+}
+.producto__botones button.pagarbtn:disabled:hover {
+	cursor: not-allowed;
+	color: #b6b6b6;
+	background-color: #f6f6f6;
+	opacity: 1;
+}
+.producto__botones button.pagarbtn:disabled:active {
+	transform: none;
+}
+.producto__botones button.pagarbtn:hover {
+	opacity: 0.8;
+}
+.producto__botones button.favoritobtn:hover {
+	border-color: var(--black-1);
+}
+.producto__excluido {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.producto__envios div {
+	display: grid;
+	grid-template-columns: 30px 1fr;
+	align-items: center;
+	column-gap: 10px;
+	margin-bottom: 20px;
+}
+.producto__envios div:last-child {
+	margin-bottom: 0;
+}
+.producto__envios div svg {
+	width: 30px;
+	height: 30px;
+}
+.producto__envios div p {
+	font-size: 14px;
+	line-height: normal;
+}
+.producto__informacion {
+	grid-column: 1/ -1;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.producto__visualizar .swiper-zoom-container {
+	padding: 40px;
+}
+.producto__visualizar .swiper-pagination {
+	bottom: 30px !important;
+}
+.producto__visualizar img {
+	margin-bottom: 40px;
+	height: 700px;
+}
+.visualizar img {
+	width: 800px;
+	height: 700px;
+	object-fit: contain;
+	background: transparent;
+}
+.producto__empresa {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.producto__empresa button {
+	max-width: 300px;
+	padding: 10px;
+	border: var(--border);
+	background: var(--white);
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	row-gap: 10px;
+	column-gap: 10px;
+	position: relative;
+}
+.producto__empresa:hover .producto__empresaContenido {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+.producto__empresa button img {
+	min-width: 60px;
+	min-height: 60px;
+	padding: 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.producto__empresaContenido {
+	min-width: 300px;
+	position: absolute;
+	top: 50px;
+	right: 35px;
+	border: var(--border);
+	background: var(--white);
+	border-radius: 10px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: var(--transition-3);
+}
+.producto__empresaInformacion {
+	padding: 20px;
+}
+.producto__empresaContenido:hover {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+.producto__empresaTop {
+	padding: 20px;
+}
+.producto__empresaTop h2 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.producto__empresaTop h2 span {
+	font-size: 14px;
+	font-weight: 500;
+}
+.producto__empresaTop img {
+	margin: 0 auto;
+	min-width: 150px;
+	min-height: 150px;
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	transition: var(--transition-3);
+}
+.producto__empresaTop img:hover {
+	opacity: 0.8;
+	transform: scale(1.05);
+}
+.producto__empresaContenido p {
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.producto__empresaContenido p span {
+	font-weight: normal;
+	font-size: 14px;
+}
+.producto__empresaCreador {
+	width: 100%;
+	margin-top: 10px;
+	padding: 5px 10px;
+	border-top: var(--border);
+	display: inline-flex;
+	align-items: center;
+	row-gap: 10px;
+	column-gap: 10px;
+}
+.producto__empresaCreador img {
+	min-height: 80px;
+	min-width: 80px;
+	width: 80px;
+	height: 80px;
+	border-radius: 80%;
+}
+.producto__ventas {
+	margin: 14px 0;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+}
+.producto__ventas svg {
+	min-height: 20px;
+	min-width: 20px;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.producto__tallasAndColor {
+	display: flex;
+	align-items: center;
+	row-gap: 16px;
+	column-gap: 16px;
+	margin: 20px 0;
+	text-align: center;
+	min-width: 300px;
+}
+.producto__tallasAndColor div {
+	width: 100%;
+}
+.producto__tallasAndColor label {
+	display: block;
+	margin-bottom: 10px;
+	border: var(--border);
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+.producto__tallasAndColor select {
+	text-align: center;
+	width: 100%;
+}
+.producto__informacionEmpresa {
+	display: grid;
+	grid-template-columns: 230px 1fr;
+}
+.producto__informacionEmpresa .producto__empresaTop {
+	padding: 0;
+	margin-top: 10px;
+}
+.producto__informacionEmpresa .producto__empresaTop h2 {
+	text-align: left;
+}
+.producto__fechas {
+	display: inline-flex;
+	align-items: center;
+	row-gap: 10px;
+	column-gap: 10px;
+	padding: 10px 0;
+}
+.producto__fechas h2 {
+	font-size: 14px;
+	font-weight: 500;
+}
+.producto__fechas p {
+	font-size: 14px;
+}
+.producto__fechas,
+.producto__informacionEmpresa .producto__empresaCreador {
+	grid-column: 1/ -1;
+	border-bottom: var(--border);
+}
+@media (max-width: 1500px) {
+	.producto__grid {
+		grid-template-columns: 600px 1fr;
+	}
+}
+@media (max-width: 1200px) {
+	.producto__grid {
+		grid-template-columns: 500px 1fr;
+	}
+	.producto__swiper .swiper-zoom-container {
+		height: 500px;
+	}
+}
+@media (max-width: 1000px) {
+	.producto__grid {
+		grid-template-columns: 400px 1fr;
+	}
+	.producto__swiper .swiper-zoom-container {
+		height: 400px;
+	}
+}
+@media (max-width: 900px) {
+	.producto__headding {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.producto__textoTop {
+		display: none;
+	}
+	.producto__right {
+		margin: 40px 0;
+	}
+	.producto__grid {
+		display: block;
+	}
+	.producto__empresaContenido {
+		right: 0;
+		top: 0;
+	}
+	.producto__empresa button {
+		padding: 5px;
+	}
+}
+@media (max-width: 580px) {
+	.producto__botones {
+		flex-direction: column;
+	}
+	.producto__informacionEmpresa {
+		display: block;
+	}
+	.producto__fechas {
+		display: block;
+	}
+}

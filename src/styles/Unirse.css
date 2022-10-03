@@ -1,0 +1,78 @@
+.unirse {
+	padding-top: 30px;
+}
+.unirse__titulo {
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	border-bottom: var(--border);
+}
+.unirse__contenedor{
+	padding: 30px;
+}
+.unirse__encabezado {
+	padding-top: 10px;
+	margin-bottom: 40px;
+}
+.unirse__encabezado h2 {
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+.unirse__encabezado p {
+	font-size: 16px;
+}
+.unirse__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: flex-start;
+	row-gap: 40px;
+	column-gap: 20px;
+}
+.unirse__grid h2 {
+	margin-bottom: 16px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.unirse__grid p {
+	margin-top: 16px;
+	font-size: 14px;
+}
+.unirse__grid li {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.unirse__grid li:last-child{
+  margin-bottom: 0px;
+}
+.unirse__terminos {
+	display: flex;
+	align-items: center;
+	row-gap: 10px;
+	column-gap: 10px;
+	padding: 20px 0;
+	font-size: 14px;
+	color: var(--gris-2);
+	margin-bottom: 10px;
+	user-select: none;
+	width: fit-content;
+	margin-left: auto;
+	padding: 0 45px;
+}
+
+.unirse__terminos input {
+	border: var(--border);
+}
+@media (max-width: 700px) {
+	.unirse__grid {
+		grid-template-columns: 1fr;
+	}
+	.unirse__grid li {
+		margin-bottom: 3px;
+	}
+}
+@media (max-width: 500px) {
+	.unirse__terminos {
+		margin-bottom: 10px;
+	}
+}
