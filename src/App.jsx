@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Dashboard from './layout/dashboard';
+import Dashboard from './layout/Dashboard';
 import Inicio from './pages/home/Inicio';
 import Colecciones from './pages/publica/colecciones/Colecciones';
 import Coleccion from './pages/publica/colecciones/Coleccion';
