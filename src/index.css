@@ -553,6 +553,7 @@ html.dark select {
 .swal2-container.swal2-center > .swal2-popup {
 	border: var(--border);
 	background: var(--white);
+	color: var(--black-1);
 }
 .swal2-title {
 	color: var(--black-1);

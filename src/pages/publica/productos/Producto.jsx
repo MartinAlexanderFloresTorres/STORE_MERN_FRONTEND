@@ -48,9 +48,6 @@ const Producto = () => {
 	// useParams
 	const { url } = useParams();
 
-	// Auth
-	const { tema } = useAuth();
-
 	// useColecciones
 	const {
 		carrito,
@@ -631,7 +628,7 @@ const Producto = () => {
 			</article>
 
 			<Modal
-				bg={tema === 'dark' ? '#000' : '#fff'}
+				bg='var(--white)'
 				estado={modal2}
 				setEstado={setModal2}
 				border={false}
@@ -654,7 +651,7 @@ const Producto = () => {
 			<Modal
 				titulo='Nombre del producto'
 				radius='2px'
-				bg='rgba(0,0,0,0.7)'
+				bg='var(--white)'
 				estado={modal}
 				setEstado={setModal}
 			>
