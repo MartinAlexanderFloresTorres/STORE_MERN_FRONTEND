@@ -114,6 +114,7 @@ const Cuenta = () => {
 				title: 'Campos requeridos',
 				text: 'Todos los campos son obligatorios excepto la imagen y el telefono.',
 				icon: 'info',
+				confirmButtonText: 'Entendido',
 			});
 			return;
 		}
@@ -208,6 +209,7 @@ const Cuenta = () => {
 				title: 'Campos requeridos',
 				text: 'Todos los campos son obligatorios.',
 				icon: 'info',
+				confirmButtonText: 'Entendido',
 			});
 			return;
 		}

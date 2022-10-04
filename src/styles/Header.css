@@ -107,6 +107,8 @@
 	color: var(--black-1);
 }
 .itemLink {
+	min-width: 38px;
+	min-height: 38px;
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
@@ -282,7 +284,7 @@
 		justify-content: space-between;
 		border-bottom: var(--border);
 		background: var(--white);
-		z-index: 1;
+		z-index: 2;
 		padding: 10px 20px;
 	}
 	.menu__botones {

@@ -339,7 +339,7 @@ html.dark select {
 .boton:active {
 	transform: scale(0.9);
 }
-.swal2-styled.swal2-confirm,
+[class^='swal2'] .swal2-styled.swal2-confirm,
 .boton--black {
 	display: inline-flex !important;
 	align-items: center;
@@ -356,7 +356,7 @@ html.dark select {
 	z-index: 1;
 	overflow: hidden;
 }
-.swal2-styled.swal2-confirm::after,
+[class^='swal2'] .swal2-styled.swal2-confirm::after,
 .boton--black::after {
 	content: ' ';
 	position: absolute;
@@ -368,20 +368,20 @@ html.dark select {
 	box-shadow: var(--shadow-btn-primary);
 	opacity: 1;
 }
-.swal2-styled.swal2-confirm:active::after,
+[class^='swal2'] .swal2-styled.swal2-confirm:active::after,
 .boton--black:active::after {
 	transform: scale(10);
 	text-decoration: none;
 	opacity: 0;
 }
 .boton--black:hover,
-.swal2-styled.swal2-confirm:hover {
+[class^='swal2'] .swal2-styled.swal2-confirm:hover {
 	background: var(--btn-primary-hover) !important;
 }
-.swal2-styled.swal2-confirm:active {
+[class^='swal2'] .swal2-styled.swal2-confirm:active {
 	background: var(--btn-primary) !important;
 }
-.swal2-styled.swal2-confirm:active,
+[class^='swal2'] .swal2-styled.swal2-confirm:active,
 .swal2-styled.swal2-cancel:active,
 .boton--black:active {
 	transform: scale(0.9);
@@ -458,25 +458,25 @@ html.dark select {
 	z-index: 5;
 	cursor: pointer;
 }
-.overlay--escuchando{
-	background: rgba(0, 0, 0, 0.9);
+.overlay--escuchando {
+	background: rgba(0, 0, 0, 0.92);
 	display: grid;
 	place-content: center;
 	color: #fff;
 	cursor: auto;
 }
-.overlay--escuchando section{
+.overlay--escuchando section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.overlay--escuchando section h2{
+.overlay--escuchando section h2 {
 	font-size: 30px;
 	font-weight: 600;
 	padding-right: 40px;
 	letter-spacing: 1px;
 }
-.overlay--micro{
+.overlay--micro {
 	width: 100px;
 	height: 100px;
 	display: flex;
@@ -499,7 +499,7 @@ html.dark select {
 		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
 	}
 }
-.overlay--micro svg{
+.overlay--micro svg {
 	width: 40px;
 	height: 40px;
 }
@@ -561,14 +561,14 @@ html.dark select {
 	font-size: 16px;
 	color: var(--gris-2);
 }
-.swal2-styled.swal2-confirm,
-.swal2-styled.swal2-cancel {
+[class^='swal2'] .swal2-styled.swal2-confirm,
+[class^='swal2'] .swal2-styled.swal2-cancel {
 	min-width: 100px;
 	font-size: 14px;
 	min-height: fit-content;
 }
-.swal2-styled.swal2-cancel:focus,
-.swal2-styled.swal2-confirm:focus {
+[class^='swal2'] .swal2-styled.swal2-cancel:focus,
+[class^='swal2'] .swal2-styled.swal2-confirm:focus {
 	box-shadow: none;
 }
 /*=============== swiper ===============*/

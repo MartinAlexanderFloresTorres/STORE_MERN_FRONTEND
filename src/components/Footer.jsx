@@ -186,7 +186,7 @@ const Footer = ({ handleMenu }) => {
 			</div>
 
 			<div className='footer__bottom'>
-				<p>© 2022 Ecommerce White Todos los derechos reservados</p>
+				<p>© 2022 STORE | Todos los derechos reservados</p>
 			</div>
 		</footer>
 	);

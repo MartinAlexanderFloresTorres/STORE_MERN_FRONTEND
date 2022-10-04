@@ -33,8 +33,8 @@ const Busqueda = () => {
 	// when the user is in the search page
 	useEffect(() => {
 		if (pathname === '/search') {
+			setSearchParams({ q: search || '' });
 			if (search) {
-				setSearchParams({ q: search });
 				setCargo(true);
 			}
 		}
@@ -88,7 +88,6 @@ const Busqueda = () => {
 					setSearch(transcript);
 					setSearchParams({ q: transcript });
 					navitage(`/search?q=${transcript}`);
-					console.log(transcript);
 					handleSearch({ value: transcript });
 				}
 			};
@@ -111,7 +110,7 @@ const Busqueda = () => {
 					<MagnifyingGlassIcon />
 				</button>
 				<input
-					value={pathname === '/search' ? search || q : search}
+					value={pathname === '/search' ? search : ''}
 					onChange={e => setSearch(e.target.value.trimStart())}
 					type='text'
 					placeholder='Buscar Producto...'

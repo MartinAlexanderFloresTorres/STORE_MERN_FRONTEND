@@ -13,7 +13,7 @@ const Inicio = () => {
 
 	return (
 		<>
-			<Oferta className='contenedor' />
+			<Oferta />
 
 			<Banner
 				video={false}
