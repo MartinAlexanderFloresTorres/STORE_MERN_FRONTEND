@@ -110,7 +110,7 @@ const Busqueda = () => {
 					<MagnifyingGlassIcon />
 				</button>
 				<input
-					value={pathname === '/search' ? search : ''}
+					value={pathname === '/search' ? search : search}
 					onChange={e => setSearch(e.target.value.trimStart())}
 					type='text'
 					placeholder='Buscar Producto...'
