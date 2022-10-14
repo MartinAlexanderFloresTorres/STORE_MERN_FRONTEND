@@ -600,6 +600,13 @@ button.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
 button.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root:hover {
 	background-color: var(--bg-previa-producto);
 }
+a.css-1omp2b7,
+button.css-1omp2b7{
+	color: var(--black-1);
+}
+.MuiPagination-root button{
+	color: var(--black-1);
+}
 /*=============== producto__pasarela ===============*/
 .pasarela__grid {
 	width: 100%;
