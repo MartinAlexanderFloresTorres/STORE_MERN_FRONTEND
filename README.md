@@ -9,6 +9,6 @@ https://github.com/MartinAlexanderFloresTorres/STORE_MERN_BACKEND
 VITE_BACKEND_URL=http://localhost:4000
 
 ### PROYECTO EN PRODUCCION: 
-https://store-white.netlify.app/
+https://tienda-de-white.netlify.app
 
 ![Captura de pantalla (413)](https://user-images.githubusercontent.com/91045865/193708040-076c71ac-6b45-4323-96ca-10d650281180.png)
